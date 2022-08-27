@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "projects": {
+    "booking": "apps/booking",
+    "booking-domain": "libs/booking/domain",
+    "booking-e2e": "apps/booking-e2e",
+    "booking-feature-book": "libs/booking/feature-book",
+    "booking-feature-tickets": "libs/booking/feature-tickets",
+    "booking-ui-common": "libs/booking/ui-common",
+    "shared-ui-shell": "libs/shared/ui-shell",
+    "shared-util-common": "libs/shared/util-common"
+  },
+  "defaultProject": "booking"
+}
