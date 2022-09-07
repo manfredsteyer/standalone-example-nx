@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/shared/ui-shell",
   "sourceRoot": "libs/shared/ui-shell/src",
   "prefix": "shell",
   "targets": {

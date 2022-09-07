@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/shared/util-common",
   "sourceRoot": "libs/shared/util-common/src",
   "prefix": "common",
   "targets": {

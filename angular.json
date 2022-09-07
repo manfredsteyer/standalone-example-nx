@@ -7,8 +7,8 @@
     "booking-feature-book": "libs/booking/feature-book",
     "booking-feature-tickets": "libs/booking/feature-tickets",
     "booking-ui-common": "libs/booking/ui-common",
+    "checkin-domain": "libs/checkin/domain",
     "shared-ui-shell": "libs/shared/ui-shell",
     "shared-util-common": "libs/shared/util-common"
-  },
-  "defaultProject": "booking"
+  }
 }

@@ -16,8 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "@nx-example/boarding/domain": ["libs/boarding/domain/index.ts"],
-      //"@nx-example/boarding/domain": ["libs/boarding/app2/domain/index.ts"],
-
       "@nx-example/booking/domain": ["libs/booking/domain/src/index.ts"],
       "@nx-example/booking/feature-book": [
         "libs/booking/feature-book/src/index.ts"
@@ -26,6 +24,7 @@
         "libs/booking/feature-tickets/src/index.ts"
       ],
       "@nx-example/booking/ui-common": ["libs/booking/ui-common/src/index.ts"],
+      "@nx-example/checkin/domain": ["libs/checkin/domain/src/index.ts"],
       "@nx-example/shared/ui-shell": ["libs/shared/ui-shell/src/index.ts"],
       "@nx-example/shared/util-common": ["libs/shared/util-common/src/index.ts"]
     }

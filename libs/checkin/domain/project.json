@@ -1,29 +1,29 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/booking/domain/src",
-  "prefix": "booking",
+  "sourceRoot": "libs/checkin/domain/src",
+  "prefix": "nx-example",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/booking/domain"],
+      "outputs": ["dist/libs/checkin/domain"],
       "options": {
-        "project": "libs/booking/domain/ng-package.json"
+        "project": "libs/checkin/domain/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/booking/domain/tsconfig.lib.prod.json"
+          "tsConfig": "libs/checkin/domain/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/booking/domain/tsconfig.lib.json"
+          "tsConfig": "libs/checkin/domain/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/booking/domain"],
+      "outputs": ["coverage/libs/checkin/domain"],
       "options": {
-        "jestConfig": "libs/booking/domain/jest.config.ts",
+        "jestConfig": "libs/checkin/domain/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -31,11 +31,11 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/booking/domain/**/*.ts",
-          "libs/booking/domain/**/*.html"
+          "libs/checkin/domain/**/*.ts",
+          "libs/checkin/domain/**/*.html"
         ]
       }
     }
   },
-  "tags": ["domain:booking", "type:domain-logic"]
+  "tags": ["domain:checkin", "type:domain-logic"]
 }

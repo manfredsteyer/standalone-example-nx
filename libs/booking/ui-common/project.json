@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/booking/ui-common",
   "sourceRoot": "libs/booking/ui-common/src",
   "prefix": "common",
   "targets": {

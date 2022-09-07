@@ -1,6 +1,5 @@
 {
   "projectType": "library",
-  "root": "libs/booking/feature-book",
   "sourceRoot": "libs/booking/feature-book/src",
   "prefix": "booking",
   "targets": {
