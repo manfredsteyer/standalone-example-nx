@@ -8,7 +8,7 @@ import { Flight } from '../entities/flight';
 })
 export class FlightService {
   flights: Flight[] = [];
-  baseUrl = `http://www.angular.at/api`;
+  baseUrl = `http://demo.angulararchitects.io/api`;
 
   reqDelay = 1000;
 

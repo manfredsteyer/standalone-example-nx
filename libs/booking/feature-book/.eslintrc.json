@@ -16,15 +16,8 @@
             "prefix": "flight",
             "style": "camelCase"
           }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "flight",
-            "style": "kebab-case"
-          }
         ]
+       
       }
     },
     {

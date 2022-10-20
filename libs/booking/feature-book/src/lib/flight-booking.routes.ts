@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { forBookingDomain } from "@nx-example/booking/domain";
+import { provideBookingDomain } from "@nx-example/booking/domain";
 import { FlightBookingComponent } from "./flight-booking.component";
 import { FlightEditComponent } from "./flight-edit/flight-edit.component";
 import { FlightSearchComponent } from "./flight-search/flight-search.component";
@@ -9,7 +9,7 @@ export const FLIGHT_BOOKING_ROUTES: Routes = [{
     path: '',
     component: FlightBookingComponent,
     providers: [
-        forBookingDomain()
+        provideBookingDomain()
     ],
     children: [
         {

@@ -24,7 +24,13 @@
         "libs/booking/feature-tickets/src/index.ts"
       ],
       "@nx-example/booking/ui-common": ["libs/booking/ui-common/src/index.ts"],
-      "@nx-example/checkin/domain": ["libs/checkin/domain/src/index.ts"],
+      "@nx-example/luggage/domain": ["libs/luggage/domain/src/index.ts"],
+      "@nx-example/luggage/feature-checkin": [
+        "libs/luggage/feature-checkin/src/index.ts"
+      ],
+      "@nx-example/luggage/feature-report-loss": [
+        "libs/luggage/feature-report-loss/src/index.ts"
+      ],
       "@nx-example/shared/ui-shell": ["libs/shared/ui-shell/src/index.ts"],
       "@nx-example/shared/util-common": ["libs/shared/util-common/src/index.ts"]
     }

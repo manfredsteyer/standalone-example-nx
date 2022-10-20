@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/luggage/feature-report-loss/src",
+  "prefix": "luggage",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/luggage/feature-report-loss"],
+      "options": {
+        "jestConfig": "libs/luggage/feature-report-loss/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/luggage/feature-report-loss/**/*.ts",
+          "libs/luggage/feature-report-loss/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:luggage", "type:feature"]
+}

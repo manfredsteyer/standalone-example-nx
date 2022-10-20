@@ -1,12 +1,5 @@
-
-
-
-
-
-
-
 import { CommonModule } from "@angular/common";
-import { Component, Inject } from "@angular/core";
+import { Component, inject, Inject } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { Store } from "@ngrx/store";
 import { BookingSlice, delayFlight, loadFlights, selectFlights } from "@nx-example/booking/domain";
@@ -14,7 +7,6 @@ import { take } from "rxjs";
 
 import { FlightCardComponent } from '@nx-example/booking/ui-common';
 import { CityValidator } from '@nx-example/shared/util-common';
-import { CheckinService } from '@nx-example/checkin/domain';
 
 @Component({
   standalone: true,
@@ -22,8 +14,6 @@ import { CheckinService } from '@nx-example/checkin/domain';
     CommonModule, 
     FormsModule, 
     FlightCardComponent,
-
-    
     CityValidator,
   ],
   selector: 'flight-search',
@@ -31,19 +21,17 @@ import { CheckinService } from '@nx-example/checkin/domain';
 })
 export class FlightSearchComponent {
 
-  from = 'Hamburg'; // in Germany
-  to = 'Graz'; // in Austria
+  from = 'Berlin'; 
+  to = 'London'; 
   urgent = false;
+
+  store = inject(Store<BookingSlice>);
   flights$ = this.store.select(selectFlights);
 
   basket: { [id: number]: boolean } = {
     3: true,
     5: true
   };
-
-  constructor(@Inject(Store) private store: Store<BookingSlice>) {
-    CheckinService;
-  }
 
   search(): void {
     if (!this.from || !this.to) return;

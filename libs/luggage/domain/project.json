@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/luggage/domain/src",
+  "prefix": "luggage",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/luggage/domain"],
+      "options": {
+        "jestConfig": "libs/luggage/domain/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/luggage/domain/**/*.ts",
+          "libs/luggage/domain/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:luggage", "type:domain-logic"]
+}
