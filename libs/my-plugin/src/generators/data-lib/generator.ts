@@ -17,7 +17,10 @@ export default async function (tree: Tree, options: MyPluginGeneratorSchema) {
 
   tree.write('demo.txt', 'Just a test!');
 
-  await libraryGenerator(tree, options);
+  await libraryGenerator(tree, {
+    ...options,
+    standalone: true
+  });
 
   const libsDir = getWorkspaceLayout(tree).libsDir;
   const projectRoot = `${libsDir}/${options.name}`;
