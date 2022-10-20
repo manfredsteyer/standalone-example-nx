@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { NextFlightComponent } from '@nx-example/booking/feature-tickets';
 import { HomeComponent } from './home/home.component';
 
 export const APP_ROUTES: Routes = [
@@ -19,13 +20,6 @@ export const APP_ROUTES: Routes = [
       ),
   },
   {
-    path: 'next-flight',
-    loadComponent: () =>
-      import('@nx-example/booking/feature-tickets').then(
-        (m) => m.NextFlightComponent
-      ),
-  },
-  {
     path: 'tickets',
     loadChildren: () =>
       import('@nx-example/booking/feature-tickets').then(
@@ -33,8 +27,8 @@ export const APP_ROUTES: Routes = [
       ),
   },
   {
-    path: 'about',
-    loadComponent: () =>
-      import('./about/about.component').then((m) => m.AboutComponent),
+    path: 'next-flight',
+    component: NextFlightComponent,
   },
+ 
 ];
