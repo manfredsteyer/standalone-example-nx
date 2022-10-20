@@ -12,6 +12,8 @@
     "luggage-e2e": "apps/luggage-e2e",
     "luggage-feature-checkin": "libs/luggage/feature-checkin",
     "luggage-feature-report-loss": "libs/luggage/feature-report-loss",
+    "my-plugin": "libs/my-plugin",
+    "my-plugin-e2e": "apps/my-plugin-e2e",
     "shared-ui-shell": "libs/shared/ui-shell",
     "shared-util-common": "libs/shared/util-common"
   }

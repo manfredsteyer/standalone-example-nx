@@ -1,0 +1,22 @@
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {Observable, of} from 'rxjs';
+import {<%=entityClassName%>} from './<%=entityFileName%>';
+
+@Injectable({ providedIn: 'root' })
+export class <%=entityClassName%>DataService {
+
+  constructor(private http: HttpClient) {
+  }
+
+  load(id: string): Observable<<%=entityClassName%>> {
+    const url = 'http://demo.angulararchitects.io/api/<%=entityFileName%>';
+
+    const params = new HttpParams()
+      .set('id', id);
+
+    const headers = new HttpHeaders().set('Accept', 'application/json');
+
+    return this.http.get<<%=entityClassName%>>(url, {params, headers});
+  }
+}

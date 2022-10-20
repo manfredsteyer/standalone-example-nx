@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "my-plugin",
+  "version": "0.0.1",
+  "generators": {
+    "data-lib": {
+      "factory": "./src/generators/data-lib/generator",
+      "schema": "./src/generators/data-lib/schema.json",
+      "description": "data-lib generator"
+    }
+  }
+}
