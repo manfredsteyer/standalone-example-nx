@@ -1,13 +1,8 @@
-import { HomeComponent } from './home/home.component';
-
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map, shareReplay } from 'rxjs';
 import { Component, Inject } from '@angular/core';
-
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { NavbarComponent, SHELL, SidebarComponent } from '@nx-example/shared/ui-shell';
-
+import { RouterOutlet } from '@angular/router';
+import { SHELL } from '@nx-example/shared/ui-shell';
 import { MATERIAL } from './material';
 
 @Component({

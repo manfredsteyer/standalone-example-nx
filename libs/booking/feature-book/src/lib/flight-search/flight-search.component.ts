@@ -16,6 +16,8 @@ import { CityValidator } from '@nx-example/shared/util-common';
     FlightCardComponent,
     CityValidator,
   ],
+  providers: [
+  ],
   selector: 'flight-search',
   templateUrl: './flight-search.component.html'
 })
