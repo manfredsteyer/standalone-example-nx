@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CheckinComponent } from '@nx-example/luggage/feature-checkin';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   imports: [
+    RouterModule,
     CommonModule,
-    CheckinComponent
   ],
   selector: 'nx-example-root',
   templateUrl: './app.component.html',

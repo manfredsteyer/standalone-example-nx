@@ -1,6 +1,5 @@
-import { HttpClientModule } from "@angular/common/http";
-import { Component, importProvidersFrom } from "@angular/core";
-import { RouterLinkWithHref, RouterModule, RouterOutlet } from "@angular/router";
+import { Component } from "@angular/core";
+import { RouterLinkWithHref, RouterOutlet } from "@angular/router";
 
 // import { CheckinDomainModule } from '@nx-example/checkin/domain';
 

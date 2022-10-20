@@ -17,17 +17,17 @@ export class LossReportDataService {
         */
 
     return of([
-      { id: 1, name: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet' },
       {
-        id: 2,
+        id: 1,
         name: 'At vero eos',
         description: 'At vero eos et accusam et justo duo dolores',
       },
       {
-        id: 3,
+        id: 2,
         name: 'Duis autem',
         description: 'Duis autem vel eum iriure dolor in hendrerit',
       },
+      { id: 3, name: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet' },
     ]);
   }
 }
