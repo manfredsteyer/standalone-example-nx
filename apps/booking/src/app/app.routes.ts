@@ -28,7 +28,10 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'next-flight',
-    component: NextFlightComponent,
+    // component: NextFlightComponent,
+    loadComponent: () => 
+      import('@nx-example/booking/feature-tickets')
+        .then(m => m.NextFlightComponent),
   },
  
 ];
