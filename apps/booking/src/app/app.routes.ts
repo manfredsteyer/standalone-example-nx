@@ -40,6 +40,12 @@ export const APP_ROUTES: Routes = [
       remoteName: 'luggage',
       exposedModule: './routes'
     }).then(esm => esm.APP_ROUTES)
+  },
+  {
+    path: 'upgrade',
+    loadChildren: () => 
+      import('@nx-example/booking/feature-upgrade')
+        .then(esm => esm.UPGRADE_ROUTES)
   }
  
 ];

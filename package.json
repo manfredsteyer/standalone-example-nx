@@ -7,8 +7,7 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test",
-    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +24,7 @@
     "@angular/platform-browser-dynamic": "15.0.0-rc.0",
     "@angular/router": "15.0.0-rc.0",
     "@ngrx/effects": "^14.3.0",
+    "@ngrx/entity": "^14.3.2",
     "@ngrx/store": "^14.3.0",
     "@ngrx/store-devtools": "^14.3.0",
     "@nrwl/angular": "15.0.0",
@@ -35,7 +35,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-architects/ddd": "^2.1.2",
+    "@angular-architects/ddd": "^3.0.0",
     "@angular-devkit/build-angular": "15.0.0-rc.0",
     "@angular-eslint/eslint-plugin": "14.0.4",
     "@angular-eslint/eslint-plugin-template": "14.0.4",
@@ -67,7 +67,6 @@
     "jest-preset-angular": "12.2.2",
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "14.2.1",
-    "ngx-build-plus": "^14.0.0",
     "nx": "15.0.0",
     "postcss": "^8.4.5",
     "postcss-import": "14.1.0",

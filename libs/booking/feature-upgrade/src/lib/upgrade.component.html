@@ -1,0 +1,9 @@
+<h1>booking-upgrade</h1>
+
+<table class="table">
+  <tr *ngFor="let flightClass of flightClassList$ | async">
+    <td>{{ flightClass.id }}</td>
+    <td>{{ flightClass.name }}</td>
+    <td>{{ flightClass.description }}</td>
+  </tr>
+</table>

@@ -6,6 +6,7 @@
     "booking-e2e": "apps/booking-e2e",
     "booking-feature-book": "libs/booking/feature-book",
     "booking-feature-tickets": "libs/booking/feature-tickets",
+    "booking-feature-upgrade": "libs/booking/feature-upgrade",
     "booking-ui-common": "libs/booking/ui-common",
     "luggage": "apps/luggage",
     "luggage-domain": "libs/luggage/domain",
