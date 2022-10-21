@@ -1,11 +1,14 @@
 {
+  "name": "shared-util-common",
   "projectType": "library",
   "sourceRoot": "libs/shared/util-common/src",
   "prefix": "common",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/shared/util-common"],
+      "outputs": [
+        "dist/libs/shared/util-common"
+      ],
       "options": {
         "project": "libs/shared/util-common/ng-package.json"
       },
@@ -21,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/shared/util-common"],
+      "outputs": [
+        "coverage/libs/shared/util-common"
+      ],
       "options": {
         "jestConfig": "libs/shared/util-common/jest.config.ts",
         "passWithNoTests": true
@@ -37,5 +42,8 @@
       }
     }
   },
-  "tags": ["domain:shared", "type:util"]
+  "tags": [
+    "domain:shared",
+    "type:util"
+  ]
 }

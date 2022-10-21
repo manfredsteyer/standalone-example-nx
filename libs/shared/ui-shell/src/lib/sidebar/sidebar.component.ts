@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { RouterModule } from '@angular/router';
 import { map, shareReplay } from 'rxjs';
@@ -20,6 +21,7 @@ import { map, shareReplay } from 'rxjs';
         CommonModule,
         MatToolbarModule,
         MatButtonModule,
+        MatMenuModule,
         MatSidenavModule,
         MatIconModule,
         MatListModule,

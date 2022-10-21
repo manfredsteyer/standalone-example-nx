@@ -1,11 +1,14 @@
 {
+  "name": "shared-ui-shell",
   "projectType": "library",
   "sourceRoot": "libs/shared/ui-shell/src",
   "prefix": "shell",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/shared/ui-shell"],
+      "outputs": [
+        "dist/libs/shared/ui-shell"
+      ],
       "options": {
         "project": "libs/shared/ui-shell/ng-package.json"
       },
@@ -21,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/shared/ui-shell"],
+      "outputs": [
+        "coverage/libs/shared/ui-shell"
+      ],
       "options": {
         "jestConfig": "libs/shared/ui-shell/jest.config.ts",
         "passWithNoTests": true
@@ -37,5 +42,8 @@
       }
     }
   },
-  "tags": ["domain:shared", "type:ui"]
+  "tags": [
+    "domain:shared",
+    "type:ui"
+  ]
 }

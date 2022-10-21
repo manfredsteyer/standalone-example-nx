@@ -1,11 +1,14 @@
 {
+  "name": "booking-feature-book",
   "projectType": "library",
   "sourceRoot": "libs/booking/feature-book/src",
   "prefix": "booking",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/booking/feature-book"],
+      "outputs": [
+        "dist/libs/booking/feature-book"
+      ],
       "options": {
         "project": "libs/booking/feature-book/ng-package.json"
       },
@@ -21,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/booking/feature-book"],
+      "outputs": [
+        "coverage/libs/booking/feature-book"
+      ],
       "options": {
         "jestConfig": "libs/booking/feature-book/jest.config.ts",
         "passWithNoTests": true
@@ -37,5 +42,8 @@
       }
     }
   },
-  "tags": ["domain:booking", "type:feature"]
+  "tags": [
+    "domain:booking",
+    "type:feature"
+  ]
 }

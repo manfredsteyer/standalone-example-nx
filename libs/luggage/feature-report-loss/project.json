@@ -1,11 +1,14 @@
 {
+  "name": "luggage-feature-report-loss",
   "projectType": "library",
   "sourceRoot": "libs/luggage/feature-report-loss/src",
   "prefix": "luggage",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/luggage/feature-report-loss"],
+      "outputs": [
+        "coverage/libs/luggage/feature-report-loss"
+      ],
       "options": {
         "jestConfig": "libs/luggage/feature-report-loss/jest.config.ts",
         "passWithNoTests": true
@@ -21,5 +24,8 @@
       }
     }
   },
-  "tags": ["domain:luggage", "type:feature"]
+  "tags": [
+    "domain:luggage",
+    "type:feature"
+  ]
 }

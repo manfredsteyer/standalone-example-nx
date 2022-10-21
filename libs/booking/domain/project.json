@@ -1,11 +1,14 @@
 {
+  "name": "booking-domain",
   "projectType": "library",
   "sourceRoot": "libs/booking/domain/src",
   "prefix": "booking",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/booking/domain"],
+      "outputs": [
+        "dist/libs/booking/domain"
+      ],
       "options": {
         "project": "libs/booking/domain/ng-package.json"
       },
@@ -21,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/booking/domain"],
+      "outputs": [
+        "coverage/libs/booking/domain"
+      ],
       "options": {
         "jestConfig": "libs/booking/domain/jest.config.ts",
         "passWithNoTests": true
@@ -37,5 +42,8 @@
       }
     }
   },
-  "tags": ["domain:booking", "type:domain-logic"]
+  "tags": [
+    "domain:booking",
+    "type:domain-logic"
+  ]
 }
