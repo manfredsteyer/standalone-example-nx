@@ -1,4 +1,4 @@
-// libs/booking/domain/src/lib/domain.providers.ts
+// libs/booking/domain/src/lib/providers.ts
 
 import { provideEffects } from "@ngrx/effects";
 import { provideState } from "@ngrx/store";
