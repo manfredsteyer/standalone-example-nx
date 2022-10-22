@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { CommonModule } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -8,7 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkWithHref } from '@angular/router';
 import { map, shareReplay } from 'rxjs';
 
 @Component({
@@ -17,8 +17,9 @@ import { map, shareReplay } from 'rxjs';
     templateUrl: './sidebar.component.html',
     styleUrls: ['./sidebar.component.css'],
     imports: [
-        RouterModule,
-        CommonModule,
+        RouterLink,
+        RouterLinkWithHref,
+        AsyncPipe,
         MatToolbarModule,
         MatButtonModule,
         MatMenuModule,
